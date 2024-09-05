@@ -12,13 +12,13 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "SQLite",
-            targets: ["SQLite"]
+            name: "SQLiteSwift",
+            targets: ["SQLiteSwift"]
         )
     ],
     targets: [
         .target(
-            name: "SQLite",
+            name: "SQLiteSwift",
             exclude: [
                 "Info.plist"
             ]
@@ -26,7 +26,7 @@ let package = Package(
         .testTarget(
             name: "SQLiteTests",
             dependencies: [
-                "SQLite"
+                "SQLiteSwift"
             ],
             path: "Tests/SQLiteTests",
             exclude: [
